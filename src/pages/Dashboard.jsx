@@ -41,7 +41,7 @@ export default function Dashboard() {
                 Próximamente
                 </h3>
                 <p className="text-gray-600 text-sm">
-                Aquí podrás agregar más módulos o herramientas.
+                Proximamente (no creo que ocurra)
                 </p>
             </Card>
 
