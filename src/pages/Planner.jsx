@@ -6,7 +6,7 @@ import TimeGrid from "../components/planner/TimeGrid.jsx";
 
 export default function Planner() {
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-zinc-700">
         <Navbar />
 
         <div className="p-6 max-w-7xl mx-auto">

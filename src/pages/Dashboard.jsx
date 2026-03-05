@@ -8,11 +8,11 @@ export default function Dashboard() {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-zinc-700">
         <Navbar />
 
         <div className="p-6 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+            <h2 className="text-2xl font-semibold text-white mb-6">
             Dashboard
             </h2>
 
