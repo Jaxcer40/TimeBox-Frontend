@@ -4,12 +4,17 @@ export default function Card({ children, className = "" }) {
     return (
         <div
         className={`
-            bg-white rounded-xl shadow-md p-5
-            border border-gray-200
+            bg-[#1a1a1a] 
+            border border-[#2a2a2a]
+            rounded-xl 
+            shadow-lg 
+            p-5 
+            text-gray-200
             ${className}
         `}
         >
         {children}
         </div>
+
     );
 }

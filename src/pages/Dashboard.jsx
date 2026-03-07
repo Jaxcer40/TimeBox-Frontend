@@ -8,11 +8,11 @@ export default function Dashboard() {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-zinc-700">
+        <div className="min-h-screen bg-[#0f0f0f]">
         <Navbar />
 
         <div className="p-6 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-semibold text-white mb-6">
+            <h2 className="text-2xl font-semibold text-gray-200 mb-6">
             Dashboard
             </h2>
 
@@ -20,10 +20,10 @@ export default function Dashboard() {
 
             {/* Acceso al Planner */}
             <Card className="flex flex-col gap-4">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-lg font-semibold text-gray-200">
                 Daily Planner
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-400 text-sm">
                 Organiza tu día, establece prioridades y gestiona tu horario.
                 </p>
 
@@ -37,10 +37,10 @@ export default function Dashboard() {
 
             {/* Espacio para futuras tarjetas */}
             <Card className="flex flex-col gap-4">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-lg font-semibold text-gray-200">
                 Próximamente
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-400 text-sm">
                 Proximamente (no creo que ocurra)
                 </p>
             </Card>

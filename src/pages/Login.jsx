@@ -27,9 +27,9 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen bg-zinc-700 flex items-center justify-center p-6">
+        <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center p-6">
         <Card className="w-full max-w-md">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+            <h2 className="text-2xl font-semibold text-gray-200 mb-6 text-center">
             Iniciar sesión
             </h2>
 
@@ -51,7 +51,7 @@ export default function Login() {
             />
 
             {error && (
-                <p className="text-red-500 text-sm text-center">{error}</p>
+                <p className="text-red-400 text-sm text-center">{error}</p>
             )}
 
             <Button type="submit" className="mt-2">

@@ -8,7 +8,7 @@ export default function PriorityList() {
 
     return (
         <Card className="w-full">
-        <h2 className="text-lg font-semibold text-gray-800 mb-4">
+        <h2 className="text-lg font-semibold text-gray-200 mb-4">
             Top Priorities
         </h2>
 

@@ -15,46 +15,49 @@ export default function TimeGrid() {
 
     return (
         <Card className="w-full overflow-x-auto">
-            <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                Daily Schedule
-            </h2>
+        <h2 className="text-lg font-semibold text-gray-200 mb-4">
+            Daily Schedule
+        </h2>
 
-            <div className="min-w-[600px] grid grid-cols-3 border border-gray-200 rounded-xl overflow-hidden">
-                {/* Encabezados */}
-                <div className="bg-gray-100 border-r border-gray-200 p-2 font-medium text-gray-700 text-center">
-                Hour
-                </div>
-                <div className="bg-gray-100 border-r border-gray-200 p-2 font-medium text-gray-700 text-center">
-                :00
-                </div>
-                <div className="bg-gray-100 p-2 font-medium text-gray-700 text-center">
-                :30
-                </div>
+        <div className="min-w-[600px] grid grid-cols-3 border border-[#2a2a2a] rounded-xl overflow-hidden">
 
-                {/* Filas */}
-                {timeGrid.map((row) => (
-                <React.Fragment key={row.hour}>
-                    {/* Columna de la hora */}
-                    <div className="border-t border-gray-200 border-r p-2 text-center text-gray-700 font-medium bg-gray-50">
-                        {formatHour(row.hour)}
-                    </div>
-
-                    {/* Slot :00 */}
-                    <TimeSlot
-                        hour={row.hour}
-                        minute="00"
-                        value={row.slots["00"]}
-                    />
-
-                    {/* Slot :30 */}
-                    <TimeSlot
-                        hour={row.hour}
-                        minute="30"
-                        value={row.slots["30"]}
-                    />
-                </React.Fragment>
-                ))}
+            {/* Encabezados */}
+            <div className="bg-[#1f1f1f] border-r border-[#2a2a2a] p-2 font-medium text-gray-300 text-center">
+            Hour
             </div>
+            <div className="bg-[#1f1f1f] border-r border-[#2a2a2a] p-2 font-medium text-gray-300 text-center">
+            :00
+            </div>
+            <div className="bg-[#1f1f1f] p-2 font-medium text-gray-300 text-center">
+            :30
+            </div>
+
+            {/* Filas */}
+            {timeGrid.map((row) => (
+            <React.Fragment key={row.hour}>
+
+                {/* Columna de la hora */}
+                <div className="border-t border-[#2a2a2a] border-r p-2 text-center text-gray-400 font-medium bg-[#141414]">
+                {formatHour(row.hour)}
+                </div>
+
+                {/* Slot :00 */}
+                <TimeSlot
+                hour={row.hour}
+                minute="00"
+                value={row.slots["00"]}
+                />
+
+                {/* Slot :30 */}
+                <TimeSlot
+                hour={row.hour}
+                minute="30"
+                value={row.slots["30"]}
+                />
+
+            </React.Fragment>
+            ))}
+        </div>
         </Card>
     );
 }

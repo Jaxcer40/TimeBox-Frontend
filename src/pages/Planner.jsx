@@ -6,12 +6,12 @@ import TimeGrid from "../components/planner/TimeGrid.jsx";
 
 export default function Planner() {
     return (
-        <div className="min-h-screen bg-zinc-700">
+        <div className="min-h-screen bg-[#0f0f0f]">
         <Navbar />
 
         <div className="p-6 max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            
+
             {/* Columna izquierda */}
             <div className="flex flex-col gap-6 lg:col-span-1">
                 <PriorityList />
